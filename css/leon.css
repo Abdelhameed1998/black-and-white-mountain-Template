@@ -365,7 +365,7 @@ html{
     width: 100%;
 }
 
-.about .image::before{
+/* .about .image::before{
     position:absolute;
     content: "";
     width: 80px;
@@ -388,7 +388,7 @@ html{
     border-left:80px solid var(--main-color);;
     
 
-}
+} */
 
 
 /* start  contact  */
