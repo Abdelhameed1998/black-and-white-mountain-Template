@@ -146,7 +146,8 @@ html{
 
 /* start landing  */
 .landing{
-    background-image: url("../images/mountain.jpg");
+    background-image: url("../images/mountain.jpeg");
+    opacity: .8;
     background-position: center;
     background-size: cover;
     height: calc(100vh - 73px);
@@ -344,26 +345,26 @@ html{
 
 .about{
     padding-top:var(--section-pad);
-    padding-bottom:var(--section-pad);
+    padding-bottom:calc(var(--section-pad )+ 60px);
     background-color:var(--main-background)
 
 }
 .about-content{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap
-
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:40px ;
 }
 .about .image{
     position: relative;
-    width: 200px;
+    /* width: 200px;
     height: 375px;
-    max-width: 100%;
+    max-width: 100%; */
 }
 .about .image img{
     height: 100%;
     width: 100%;
 }
+
 .about .image::before{
     position:absolute;
     content: "";
@@ -371,7 +372,7 @@ html{
     height: calc(100% + 80px);
     top: -40px;
     left: 0px;
-    /* z-index: -1; */
+    z-index: -1;
     background-color: #ebeced;
 }
 
@@ -382,7 +383,7 @@ html{
     width:80px;
     right: -100px;
     top:-40px;
-    /* z-index: -1; */
+    z-index: -1;
     border-bottom:80px solid var(--main-color);;
     border-left:80px solid var(--main-color);;
     
@@ -429,7 +430,7 @@ html{
 .social i{
     margin-left:10px;
     margin-top: 10px;
-    color:var(--secondery-color); 
+    /* color:var(--secondery-color);  */
 }
 
 @media (max-width:767px){
